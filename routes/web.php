@@ -16,8 +16,3 @@ use Telegram\Bot\Laravel\Facades\Telegram;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/updates', function() {
-    $updates = Telegram::getUpdates();
-    dd($updates);
-});

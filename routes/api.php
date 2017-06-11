@@ -13,3 +13,6 @@ use Illuminate\Http\Request;
 */
 
 Route::post('/request/create', 'Api\\RequestController@create');
+Route::get('/getAvatars', 'Api\\ContactController@getAvatars');
+Route::post('/removeAvatar', 'Api\\ContactController@removeAvatar');
+Route::post('/uploadAvatar', 'Api\\ContactController@uploadAvatar');
